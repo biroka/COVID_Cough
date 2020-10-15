@@ -8,6 +8,18 @@ Data:
 - Includes both Males and Females 
 - Age range 17-83
 
+The data was sourced as well as using online datasets on audio files from different sources. 
+
+
+What is being done?
+
+- Using the above mentioned audio files I want to be able to predict based on the cough whether an individual has COVID-19 or not. 
+- Also want to play around with audio data augmentation, to see if it doesn't distort the result of the actual audio. 
+- Try out, if possible, whether a conversion of audio->image (a spectrogram) and then using random jitter on the spectrogram or other data augmentation techniques to increase the dataset available. 
+- 
+
+
+
 Process: 
 1. Download and Separate the data
 2. Create a DataFrame from the filenames to have an overview of the stats 
@@ -29,6 +41,8 @@ Other Ideas:
 
 
 Resources to read:
+
+**Blogs**
  
 https://benanne.github.io/2020/03/24/audio-generation.html
 
@@ -39,6 +53,17 @@ https://medium.com/@keur.plkar/audio-data-augmentation-in-python-a91600613e47
 https://www.kdnuggets.com/2020/02/audio-data-analysis-deep-learning-python-part-2.html
 
 
+**Papers**
+
+-Hasegawa-Johnson, Mark, Alan Black, Lucas Ondel, Odette Scharenborg, and Francesco Ciannella. “Image2speech: Automatically Generating Audio Descriptions of Images,” n.d., 5.
+
+-Ko, Tom, Vijayaditya Peddinti, Daniel Povey, and Sanjeev Khudanpur. “Audio Augmentation for Speech Recognition,” n.d., 4.
+
+-Park, Daniel S., William Chan, Yu Zhang, Chung-Cheng Chiu, Barret Zoph, Ekin D. Cubuk, and Quoc V. Le. “SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition.” Interspeech 2019, September 15, 2019, 2613–17. https://doi.org/10.21437/Interspeech.2019-2680.
+
+-Shuvaev, Sergey, Hamza Giaffar, and Alexei A Koulakov. “Representations of Sound in Deep Learning of Audio Features from Music,” n.d., 5.
+
+-Zhang, Hongyi, Moustapha Cisse, Yann N. Dauphin, and David Lopez-Paz. “Mixup: Beyond Empirical Risk Minimization.” ArXiv:1710.09412 [Cs, Stat], April 27, 2018. http://arxiv.org/abs/1710.09412.
 
 
 
