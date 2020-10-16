@@ -10,7 +10,9 @@ Crowd-Sourced:
   - 37 Negative Patients 
 - Includes both Males and Females 
 - Age range 17-83
+ 
 
+The dataset is imbalanced since there are only 37 negative samples. That is why I will look into the data augmentation with audio files as well as using the spectrogram. 
 Coswara-Data: 
 
 - multiple audio files with different features 
@@ -41,7 +43,7 @@ Process:
 10. Once the models work ok, use data augmentation (audio + images)
 11. Front-End?? To upload own audio and come back with a result??
 
-Currently at Number 6
+Currently at Number 8
 
 Resources to read:
 
