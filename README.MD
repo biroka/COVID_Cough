@@ -1,12 +1,23 @@
-Readme for the COVID-Cough Analysis
+**COVID-Cough Analysis**
+
+Using data from crowd-sources as well as open source projects I want to use two different models ANN and CNN in order to pass the audio-features and spectrogram through them to see if it can diagnose the disease. 
 
 Data:
+Crowd-Sourced: 
  
 - 468 Audio samples in WAV format 
   - 431 Positive Patients 
   - 37 Negative Patients 
 - Includes both Males and Females 
 - Age range 17-83
+
+Coswara-Data: 
+
+- multiple audio files with different features 
+- includes different types of coughs, vocalizations, and other features 
+
+link: https://github.com/iiscleap/Coswara-Data
+
 
 The data was sourced as well as using online datasets on audio files from different sources. 
 
@@ -15,30 +26,22 @@ What is being done?
 
 - Using the above mentioned audio files I want to be able to predict based on the cough whether an individual has COVID-19 or not. 
 - Also want to play around with audio data augmentation, to see if it doesn't distort the result of the actual audio. 
-- Try out, if possible, whether a conversion of audio->image (a spectrogram) and then using random jitter on the spectrogram or other data augmentation techniques to increase the dataset available. 
-- 
-
-
+- Try out, if possible, whether a conversion of audio->image (a spectrogram) and then using random jitter on the spectrogram or other data augmentation techniques to increase the dataset available.  
 
 Process: 
-1. Download and Separate the data
+1. Download and separate the data
 2. Create a DataFrame from the filenames to have an overview of the stats 
 3. Create Spectrograms from the audio files 
 4. Extract features from the audio files
-5. Pass the data through a ML/DL Model 
+5. Pass the features through an ANN 
+6. Pass Spectrogram images through a CNN
+7. Evaluate both models 
+8. Optimization: Can we improve any of the models without additional data?
+9. Use additional data from the Coswara-Dataset (India) to train the nets
+10. Once the models work ok, use data augmentation (audio + images)
+11. Front-End?? To upload own audio and come back with a result??
 
-Currently at Number 5. 
-
-Next steps: 
-
-Data Augmentation: 
-- Testing with the Audio Files 
-- Generating new spectrograms with random_jitter  
-
-Other Ideas: 
-- Can we use GANs here? We should be able to if we generate enough augmented data in order to train it. on track of doing Audio -> Images -> Audio 
-
-
+Currently at Number 6
 
 Resources to read:
 
