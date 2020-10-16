@@ -45,17 +45,6 @@ Currently at Number 6
 
 Resources to read:
 
-**Blogs**
- 
-https://benanne.github.io/2020/03/24/audio-generation.html
-
-https://www.kdnuggets.com/2020/02/audio-data-analysis-deep-learning-python-part-1.html
-
-https://medium.com/@keur.plkar/audio-data-augmentation-in-python-a91600613e47
-
-https://www.kdnuggets.com/2020/02/audio-data-analysis-deep-learning-python-part-2.html
-
-
 **Papers**
 
 -Hasegawa-Johnson, Mark, Alan Black, Lucas Ondel, Odette Scharenborg, and Francesco Ciannella. “Image2speech: Automatically Generating Audio Descriptions of Images,” n.d., 5.
